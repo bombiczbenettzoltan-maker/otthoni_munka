@@ -1,18 +1,77 @@
+/* Basic style for the Haunted Mound website */
+
 body {
     background-color: black;
     color: white;
-    font-family: Arial;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
 }
 
-h1 {
-    color: darkred;
-    font-size: 45px;
-    padding: 20px;
+/* HEADER */
+
+header {
+    background-color: #151111;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid darkred;
 }
 
-.menu {
-    background-color: darkred;
+h1 {
+    color: #c62828;
+    font-size: 42px;
+    margin: 5px;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+/* ARTIST CARDS */
+
+.cards {
+    display: block;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #171414;
+    border: 1px solid #482323;
     padding: 15px;
+    width: calc(50% - 42px);
+}
+
+.card img {
+    width: 450px;
+    height: 400px;
+}
+
+.card a {
+    color: #ff7777;
+}
+
+.card a:hover {
+    color: white;
 }
